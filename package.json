@@ -1,0 +1,61 @@
+{
+  "name": "tango-uuid-generator",
+  "version": "1.0.0",
+  "description": "Simple UUID generator for TypeScript functions with no dependencies",
+
+  "type": "module",
+
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && npx tsc",
+    "test": "npm run build && node --test",
+    "prepublishOnly": "npm run test"
+  },
+
+  "keywords": [
+    "guid",
+    "uuid",
+    "generator",
+    "angular",
+    "typescript",
+    "react",
+    "vue",
+    "node",
+    "browser",
+    "rfc4122",
+    "unique-id",
+    "identifier"
+  ],
+
+  "author": "Tom Gibbons <tgibbons@xmission.com>",
+  "license": "MIT",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TangoGibbons/tango-uuid-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TangoGibbons/tango-uuid-generator/issues"
+  },
+  "homepage": "https://github.com/TangoGibbons/tango-uuid-generator#readme",
+
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
